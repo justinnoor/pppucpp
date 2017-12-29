@@ -2,6 +2,8 @@
 
 using namespace std;
 
+//Use this code for the compiler error exercises
+
 int main()
 {
 	cout<<"Hola mundo!\n";
