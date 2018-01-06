@@ -2,16 +2,16 @@
 
 using namespace std;
 
-//See the 'Try This' section on p.65 for the instructions.
+//'Try This' exercise p.65
 
 int main()
 {
 	cout << "Please enter your first name and age\n";
 	string first_name;
-	int age;
+	double age;
 	cin >> first_name;
 	cin >> age;
-	cout << "Hello, " << first_name << " (age"<< age <<")\n";
+	cout << "Hello, " << first_name << "!" << " (age: "<< age * 12 <<" months)\n";
 
 	return 0;
 }
