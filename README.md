@@ -10,8 +10,8 @@ When I first started programming, I hopped around various languages, tutorials, 
 
 ### Resources
 
-- Buy the book at http://stroustrup.com/programming.html
-- Support site for the book http://stroustrup.com/Programming
+- Buy the book at https://stroustrup.com/programming.html
+- Support site for the book https://stroustrup.com/Programming
 - https://isocpp.org
-- en.cppreference.com
-- cppcast.com
+- https://en.cppreference.com
+- https://cppcast.com
