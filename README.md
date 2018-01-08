@@ -5,7 +5,7 @@ This repository contains the drills, exercises, and other assignments, for the c
 
 ### Background
 
-When I first started programming, I hopped around various languages, frameworks, tutorials, and code camps, which gave me a weak foundation. Looking back, my journey should have began with PPPUC++. This book is an invaluable resource for anyone interested in C++. After learning C++, everything else will make sense.
+When I first started programming, I hopped around various languages, frameworks, tutorials, and code camps, never building a solid foundation for myself. Looking back, my journey should have began with PPPUC++. This book is an invaluable resource for anyone interested in C++. After learning C++, everything else will make sense.
 
 This book can serve as both a guide for beginners, and a refresher for advanced programmers. Dr. Stroustrup wrote this book with great care and it is quite enjoyable to read. His humorous personality livens up what could have easily been a dry technical book. It is truly an honor to have Dr. Stroustrup still spearheading the C++ language today.
 
