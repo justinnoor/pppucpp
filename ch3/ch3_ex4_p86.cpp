@@ -5,8 +5,8 @@ using namespace std;
 int main()
 {
 
-    double val1;
-    double val2;
+    int val1;
+    int val2;
     
     cout << "Please enter your numbers:\n";
     cin >> val1 >> val2;
