@@ -2,16 +2,15 @@
 
 using namespace std;
 
-//This program modifies 'ch3_ex5_p86.cpp'. It accepts from - 
-//the user three integers, and outputs them sequentially with - 
-//std::cout. They must be separated by commas (i.e., 1, 2, 3). 
-//Please note this program is quite verbose because arrays have - 
-//not been introduced yet in the book and are , therefore, - 
-//not included . Technically, I already cheated by using the - 
-//logical '&&' and '||' operators, as those are not introduced - 
-//until chapter 4. Please contact me if you have a cleaner way - 
-//of doing this. Basically, I isolated the smallest number to the - 
-//left, and worked from there. Thank you.
+//This program modifies 'ch3_ex5_p86.cpp'. It accepts from the user - 
+//three integers, and outputs them sequentially with std::cout.
+//They must be separated by commas (i.e., 1, 2, 3). Please note this - 
+//program is quite verbose because arrays have not been introduced - 
+//yet in the book and are , therefore, not included . Technically, I - 
+//already cheated by using the logical '&&' operator, as that is not - 
+//introduced until chapter 4. Please contact me if you have a cleaner - 
+//way of doing this. Basically (and obviously), I isolated the smallest - 
+//value, moved it to the left, and worked from there. Thank you.
 
 int main()
 {
