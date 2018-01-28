@@ -2,9 +2,8 @@
 
 using namespace std;
 
-//This program modifies 'ch3_ex6_p86.cpp'. It accepts strings instead - 
-//of ints from the user, and outputs them sequentially according to - 
-//length, using std::cout.
+//This program modifies 'ch3_ex6_p86.cpp', using string values -
+//inteads of ints.
 
 int main()
 {
