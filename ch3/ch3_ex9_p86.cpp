@@ -7,7 +7,6 @@ using namespace std;
 
 int main()
 {
-
     string val1;
 
     cout << "Please spell out a number :\n";
