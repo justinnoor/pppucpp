@@ -17,12 +17,12 @@ int main()
 	double amount;
 	double conversion;
 
-	cout<<"Welcome to the USD currency convertor!\n\n";
-	cout<<"Enter 'y' for yen, 'k' for kroner, or 'p' for pounds? \n\n";
-	cin>>currency;
+	cout << "Welcome to the USD currency convertor!\n\n";
+	cout << "Enter 'y' for yen, 'k' for kroner, or 'p' for pounds? \n\n";
+	cin >> currency;
 
-	cout<<"Enter the amount you wish to convert: \n\n";
-    cin>>amount;
+	cout << "Enter the amount you wish to convert: \n\n";
+    cin >> amount;
 
 	if(currency == 'y')
 		conversion = amount / yen;
