@@ -8,8 +8,6 @@ using namespace std;
 int main()
 {
 	char a = 97;
-	char b;
-	char c;
 
 	int i = 0;
 
