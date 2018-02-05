@@ -1,8 +1,4 @@
-#include <iostream>
-#include <string>
-#include <vector>
-#include <algorithm>
-#include <cmath>
+#include "std_lib_facilities.h"
 
 using namespace std;
 
