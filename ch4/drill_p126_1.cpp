@@ -2,8 +2,7 @@
 
 using namespace std;
 
-//This is the base program for the drill on p.126.
-
+//This is step 1 of the drill on page 126 of chapter 4.
 //Write a while loop that reads in two ints and prints them.
 //Exit the program with the '|' character.
 
