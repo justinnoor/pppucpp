@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//This is step 1 of the drill on page 126 of chapter 4.
+//Chapter 4 drill pg.126 step 1:
 //Write a while loop that reads in two ints and prints them.
 //Exit the program with the '|' character.
 
