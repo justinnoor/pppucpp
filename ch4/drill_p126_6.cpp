@@ -37,6 +37,11 @@ int main()
         else if(var_1 > var_2)
             cout << var_1 << " is the largest value so far\n"
                  << var_2 << " is the smallest value so far\n";
+        else if(var_1 == var_2)
+            cout << "Values: " << var_1 << " & " << var_2 << " are equal\n";
+
+        if(var_1 - var_2  >= -.01 && var_1 - var_2 <= .01 && var_1 - var_2 != 0)
+            cout << "The numbers: " << var_1 << " & " << var_2 << " are almost equal\n";
 
         var_2 = var_1;
     }
