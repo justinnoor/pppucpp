@@ -2,6 +2,10 @@
 
 using namespace std;
 
+//Chapter 3 Ex.3 Pg.85
+//Write a program that converts miles to kilometers. Be sure to prompt -
+//the user for an entry.
+
 int main()
 {
     double user_miles;
