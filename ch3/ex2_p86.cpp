@@ -10,7 +10,7 @@ int main()
     cout << "Enter a distance in miles: \n";
     cin >> user_miles;
 
-    if (user_miles == 1)
+    if (user_miles <= 1)
 	    cout << user_miles << " mile = " << user_miles * kilos << " kilometers\n";
     else
         cout << user_miles << " miles = " << user_miles * kilos << " kilometers\n";
