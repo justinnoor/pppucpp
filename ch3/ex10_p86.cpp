@@ -2,31 +2,30 @@
 
 using namespace std;
 
-//Write a program that takes an operation followed by two operands - 
-//and output the results.
+//Chapter 3 Ex.10 Pg.86
+//Write a program that takes an operation followed by two operands -
+//and prints the result. Examples: + 5 10, * 2 2.
 
 int main()
 {
     string operation;
-    double operand_1;
-    double operand_2;
+    double val_1;
+    double val_2;
 
-    cout << "Please enter one of the following operators: \n"
-         << "+ - * or /\n";
-    cin >> operation >> operand_1 >> operand_2;
+    cout << "Please enter an operation and two operators\n"
+         << "Examples: + 5 10, or * 2 2\n";
 
-    if (operation == "+")
-       cout << "Your answer is: " << operand_1 + operand_2 << "\n";
-    else if (operation == "-")
-       cout << "Your answer is: " << operand_1 - operand_2 << "\n";
-    else if (operation == "*")
-       cout << "Your answer is: " << operand_1 * operand_2 << "\n";
-    else if (operation == "/")
-       cout << "Your answer is: " << operand_1 / operand_2 << "\n";
-    else
-       cout << "Sorry, I don't know that operation\n";
+    cin >> operation >> val_1 >> val_2;
 
-    
+    if(operation == "+")
+        cout << val_1 << " + " << val_2 << " = " << val_1 + val_2 << '\n';
+    else if(operation == "-")
+        cout << val_1 << " - " << val_2 << " = " << val_1 - val_2 << '\n';
+    else if(operation == "*")
+        cout << val_1 << " * " << val_2 << " = " << val_1 * val_2 << '\n';
+    else if(operation == "/")
+        cout << val_1 << " / " << val_2 << " = " << val_1 / val_2 << '\n';
+
 	return 0;
 }
 
