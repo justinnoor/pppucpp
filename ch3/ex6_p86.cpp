@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//Chapter 3 Ex.6 Pg.86
 //Write a program that prompts the user for three integers.
 //Output them sequentially with std::cout.
 //Separate them with commas (i.e., 1, 2, 3).
