@@ -13,7 +13,7 @@ int main()
     int val_1;
     int val_2;
     
-    cout << "Please enter your numbers:\n";
+    cout << "Please enter two numbers:\n";
     cin >> val_1 >> val_2;
 
     if(val_1 == val_2)
