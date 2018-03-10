@@ -2,12 +2,8 @@
 
 using namespace std;
 
-//Chapter 4 drill pg.126 step 3:
-//Augment step 2 so that it writes "The numbers are equal" - 
-//if (only) they are equal.
-//Exit the program with the terminating '|' character.
-
-
+//Chapter 4 Drill, Step 4, Page 126
+//Change the previous program so that it uses 'doubles' instead of 'ints'.
 
 int main()
 {

@@ -2,12 +2,9 @@
 
 using namespace std;
 
-//Chapter 4 drill pg.126 step 2:
-//Change step 1 to write out "The smaller value is: ", - 
-//followed by "the larger value is: ".
-//Exit the program with the terminating '|' character.
-
-
+//Chapter 4 Drill, Step 2, Page 126
+//Modify the previous program to write out "The smaller value is:", - 
+//followed by "The larger value is:".
 
 int main()
 {

@@ -2,10 +2,9 @@
 
 using namespace std;
 
-//Chapter 4 drill pg.126 step 5:
-//After writing out which value is smaller and larger, change - 
-//the program so that it writes out "the numbers are almost equal" - 
-//if they are within .01 of eachother.
+//Chapter 4 Drill, Step 5, Page 126
+//Change the previous program so that it writes out - 
+//"the numbers are almost equal" if they are within .01 of each other.
 
 int main()
 {

@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Chapter 4 drill pg.126 step 1:
+//Chapter 4 Drill, Step 1, Page 126
 //Write a while loop that reads in two ints and prints them.
 //Exit the program with the '|' character.
 
@@ -17,7 +17,6 @@ int main()
     while(cin >> first >> second) {
         if(first == quit)
             break;
-     
         else if(second == quit)
             break;
 

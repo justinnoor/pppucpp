@@ -2,15 +2,9 @@
 
 using namespace std;
 
-
-//Chapter 4 drill pg.126 step 6:
-//See instructions on pg.126, they are quite lenghty.
-//Since the instructions specify reading in only one double at a time, - 
-//I assign 'var_1' to 'var_2' at the end of the loop to track the values.
-//Also, I initialize 'var_2' with zero (before the loop) so that there - 
-//is something in memory when the user provides the very first entry.
+//Chapter 4 Drill, Step 6, Page 126
+//Please refer to the instructions on pg.126, they are quite lenghty.
 //As always, let me know how I can improve this!
-
 
 int main()
 {
