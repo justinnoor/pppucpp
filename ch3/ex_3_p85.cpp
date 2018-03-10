@@ -2,8 +2,9 @@
 
 using namespace std;
 
-
-//Make a program that does nothing except declare multiple variables with illegal names that screw with the compiler.
+//Chapter 3, Exercise 3, Page 85
+//Make a program that does nothing except declare variables with illegal names - 
+//to screw with the compiler. See what kind of errors you get.
 
 int main()
 {

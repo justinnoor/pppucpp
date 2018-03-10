@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Chapter 3 Ex.3 Pg.85
+//Chapter 3, Exercise 2, Page 85
 //Write a program that converts miles to kilometers. Be sure to prompt -
 //the user for an entry.
 

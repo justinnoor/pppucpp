@@ -2,9 +2,9 @@
 
 using namespace std;
 
-//Chapter 3 Ex.4 Pg.86
+//Chapter 3, Exercise 4, Page 86
 //Write a program that prompts the user for two integer values.
-//Store them in val_1 and val_2. Determine and print out the -
+//Store them in val_1 and val_2. Determine, and print out the -
 //smaller, larger, sum, difference, product, and ratio of these -
 //values.
 

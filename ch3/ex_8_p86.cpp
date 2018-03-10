@@ -2,13 +2,12 @@
 
 using namespace std;
 
-//Chapter 3 Ex.8 Pg.86
+//Chapter 3, Exercise 8, Page 86
 //Write a program that tests an integer value to determine whether - 
-//or not it is an even or odd number.
+//or not it is an even or odd.
 
 int main()
 {
-
     int val_1;
 
     cout << "Please enter a number:\n";

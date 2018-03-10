@@ -2,13 +2,11 @@
 
 using namespace std;
 
-//Chapter 3 Ex.6 Pg.86
-//Write a program that prompts the user for three integers.
+//Chapter 3, Exercise 6, Page 86
+//Write a program that prompts the user for three integer values.
 //Output them sequentially with std::cout.
 //Separate them with commas (i.e., 1, 2, 3).
-
 //Please note: arrays are not introduced yet and are, therefore, not included.
-
 //As always, let me know how I can clean this up!
 
 int main()

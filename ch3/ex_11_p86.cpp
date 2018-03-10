@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Chapter 3 Ex.11 Pg.86
+//Chapter 3, Exercise 11, Page 86
 //Write a program that prompts the user to enter the number of - 
 //pennies, nickels, dimes, quarters, half-dollars, and one-dollar - 
 //coins they have. Query the user, and print these values separately.

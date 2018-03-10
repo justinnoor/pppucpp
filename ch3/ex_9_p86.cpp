@@ -2,9 +2,10 @@
 
 using namespace std;
 
-//Chapter 3 Ex.9 Pg.86
-//Write a program that tests an integer value to determine whether - 
-//or not it is an even or odd number.
+//Chapter 3, Exercise 9, Page 86
+//Write a program that converts spelled-out numbers into digits.
+//For example, "zero" should be converted to 0. Do this for the - 
+//numbers zero, one, two, three, and four.
 
 int main()
 {

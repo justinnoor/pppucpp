@@ -2,9 +2,9 @@
 
 using namespace std;
 
-//Chapter 3 Ex.10 Pg.86
+//Chapter 3, Exercise 10, Page 86
 //Write a program that takes an operation followed by two operands -
-//and prints the result. Examples: + 5 10, * 2 2.
+//and prints out the result. Examples: + 5 10, * 2 2.
 
 int main()
 {

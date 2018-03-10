@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Chapter 3 Ex.5 Pg.86
+//Chapter 3, Exercise 5, Page 86
 //Modify the previous program to prompt the user for floating point values.
 
 int main()

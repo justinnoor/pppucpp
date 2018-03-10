@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Chapter 3 Ex.7 Pg.86
+//Chapter 3 Exercise 7, Page 86
 //Modify the previous program to use string values. If the user enters - 
 //Steinbeck, Hemingway, Fitzgerald, the output should be Fitzgerald, - 
 //Hemingway, Steinbeck.
