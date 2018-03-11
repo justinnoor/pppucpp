@@ -3,7 +3,11 @@
 using namespace std;
 
 //Chapter 4 Drill, Step 6, Page 126
-//Please refer to the instructions on pg.126, they are quite lenghty.
+//Modify the previous program so that the body of the while-loop only - 
+//reads one double each time around. Define two variables to keep - 
+//track of the smallest and largest values entered. Print the values - 
+//each time around.
+
 //As always, let me know how I can improve this!
 
 int main()
@@ -20,7 +24,7 @@ int main()
             break; 
 
         if(var_2 == 0)
-            cout << var_1 << " is the largest, and the only, value so far\n";
+            cout << var_1 << " is the largest value so far\n";
         else if(var_1 < var_2)
             cout << var_1 << " is the smallest value so far\n"
                  << var_2 << " is the largest value so far\n";
