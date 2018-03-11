@@ -2,16 +2,22 @@
 
 using namespace std;
 
-//'Try This' exercise p.65
+//Chapter 3, Try This, Page 65
+//Get the name and age example to work, and then modify it so that - 
+//it writes out the age in months. Read the age variable into a double.
 
 int main()
 {
-	cout << "Please enter your first name and age\n";
 	string first_name;
 	double age;
+
+	cout << "Please enter your first name and age:\n";
+
 	cin >> first_name;
 	cin >> age;
-	cout << "Hello, " << first_name << "!" << " (age: "<< age * 12 <<" months)\n";
+
+	cout << "Hello, " << first_name << "!" 
+         << " (age: "<< age * 12 <<" months)\n";
 
 	return 0;
 }

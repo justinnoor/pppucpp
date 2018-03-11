@@ -1,23 +1,31 @@
 #include "std_lib_facilities.h"
 
+//Chapter 3 Try this, Page 68
+//Get the program on pg.67 to run, and then modify it so that - 
+//it reads an int instead of a double. Please note that you have - 
+//keep the double 'n' for the sqrt() function. Add some additional - 
+//operators at the end for experimentation.
+
 int main()
 {
-    cout << "Please enter a whole number: \n";
-    int n; //Change n to an int
-    double x; //Add double x for the sqrt() function
-	cin >> n;
-	cout << "\n n == " << n
-	     << "\n n + 1 == " << n + 1 
-         << "\n three times n == " << 3 * n
-         << "\n twice n == " << n + n
-         << "\n n squared == " << n * n
-         << "\n half of n == " << n / 2 //Note this will not be a float
-         << "\n square root of n == " << sqrt(x = n) //Assign n to double x
+    int val_1;
+    double n;
 
-    //Add some additional operators of your choice
-         << "\n incrementing n by 1 == " << ++ n
-         << "\n decrementing n by 1 == " << -- n
-         << '\n';
+    cout << "Please enter a number for val_1:\n";
+	cin >> val_1;
+
+    n = val_1;
+
+	cout << "val_1 = " << val_1 << '\n'
+	     << "val_1 + 1 = " << val_1 + 1 << '\n' 
+         << "three times val_1 = " << 3 * val_1 << '\n'
+         << "twice val_1 = " << val_1 + val_1 << '\n'
+         << "val_1 squared = " << val_1 * val_1 << '\n'
+         << "half of val_1 = " << val_1 / 2 << '\n'
+         << "square root of val_1 = " << sqrt(n) << '\n'
+
+    //Additional operators
+         << "incrementing val_1 by 1 with ++ = " << ++ val_1 << '\n';
 
     return 0;
 }

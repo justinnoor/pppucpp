@@ -1,12 +1,20 @@
 #include "std_lib_facilities.h"
 
+//Chapter 3 Try This, Page 73
+//Get the program on pg.71 to work, test it with the - 
+//sentence "She she laughed He He He because what he - 
+//did did not look very very good good". 
+//Answer the given questions.
+
 int main()
 {
     string previous = " ";
     string current;
-    while (cin >> current) {
-        if (previous == current)
+  
+    while(cin >> current) {
+        if(previous == current)
             cout << "repeated word: " << current << '\n';
+  
         previous = current;
     }
 }
