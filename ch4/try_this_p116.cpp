@@ -1,9 +1,10 @@
-//Create a square number function without using the '*' operator
-//In other words, use repeated addition to find the square of any number
-
 #include "std_lib_facilities.h"
 
 using namespace std;
+
+//Chapter 4 Try This, Page 116
+//Create a square number function without using the '*' operator.
+//In other words, use repeated addition to find the square of any number.
 
 int square(int x)
 {

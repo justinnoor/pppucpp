@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//Chapter 4 Try This, Page 113
 //Rewrite "try_this_p111.cpp" to use a for loop instead of a while loop.
 //Then modify the program to also output a table of uppercase letters.
 //The note below the instructions on p.113 hints at using vectors.
