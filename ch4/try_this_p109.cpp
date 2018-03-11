@@ -2,6 +2,10 @@
 
 using namespace std;
 
+//Chapter 4 Try This, Page 109
+//Rewrite the previous currency coverter program from pg.105 so that -
+//it uses a switch statement. Which format is easier? Why?
+
 int main()
 {
 	constexpr double yen = 104.60;

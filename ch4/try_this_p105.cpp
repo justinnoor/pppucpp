@@ -2,6 +2,10 @@
 
 using namespace std;
 
+//Chapter 4 Try This, Page 105
+//Reference the sample programs on pgs.103/104 and write a - 
+//program that converts yen, kroner, and pounds into dollars. 
+
 int main()
 {
 	constexpr double yen = 104.60;
