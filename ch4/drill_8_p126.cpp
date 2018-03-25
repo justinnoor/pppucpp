@@ -5,7 +5,8 @@ using namespace std;
 //Chapter 4 Drill, Step 7, Page 126
 //Modify the previous program so that it adds a unit of measure (i.e. 5cm).
 //Read the unit into a string. Accept units 'cm', 'm', 'in', and 'ft'.
-//Assume conversion factors m-to-cm, in-to-cm, and ft-to-in.
+//Assume conversion factors m-to-cm, in-to-cm, and ft-to-in. Reject values without - 
+//units, or with illegal representations such as "feet", "km", or "yard".
 
 //To briefly reiterate the goals of this program, the same operations are - 
 //performed and printed to the screen. Only this time, a unit of measure is thrown - 
