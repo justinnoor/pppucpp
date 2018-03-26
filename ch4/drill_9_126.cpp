@@ -3,10 +3,11 @@
 using namespace std;
 
 //Chapter 4 Drill, Step 9, Page 126
-//Modify the previous program so that it converts everything into meters - 
-//(which is actually already done :)). Keep track of the sum of all values - 
-//entered, and the number of all values, and print them to the screen. Continue - 
-//printing the other requirements from the last steps as well.
+//Modify the previous program so that it converts everything into meters, which is - 
+//already done because coincidentally, this was done in step 7. Keep track of the - 
+//sum of all values, and the total number of values entered. After the loop breaks, - 
+//print the smallest and largest values, the number of values, and the sum of all - 
+//values to the screen.
 
 
 //This program begins with some unit conversion functions. The instructions say - 
@@ -70,8 +71,6 @@ int main()
         //acheiving this, but in these early chapters of the book, a hack will suffice.
         //This should work on most Unix machines, but may not work across platforms.
         //Do whatever is needed to prevent infinite loops from occurring.
-        if(val_1 <= 0)
-            cout << "You must enter a positive value\n";
         if(val_1 <= 0)
             break;
 
@@ -167,8 +166,7 @@ int main()
             val_3 = in_to_m(val_1);
 
 
-        //The values will be managed with a vector. This is where the vector will be - 
-        //updated.
+        //Tracking the values is done with 'vector<double> totals'.
         totals.push_back(val_3);
         sort(totals);
 
@@ -202,18 +200,6 @@ int main()
 			cout << val_1 << " & " << val_2 << " are almost equal\n";
 
 
-        //This is the number of values, and the sum of all values will be printed
-        if(totals.size() == 1)
-            cout << "You have entered " << totals.size() << " value\n";
-        else
-            cout << "You have entered " << totals.size() << " values\n";
-
-        for(double x : totals)
-            total_sum = total_sum + x;
-        
-        cout << "The sum of all values is " << total_sum << "m\n";
-
-
         //The variables need to be transfered so that the values can be compared
         val_2 = val_1;
         val_4 = val_3;
@@ -221,7 +207,24 @@ int main()
         valid_unit_2 = valid_unit_1;
     }
 
-    cout << "Goodbye. Please come back and try again later.\n";
+    //Print the number of values
+    if(totals.size() == 1)
+        cout << "\nYou entered a total of " << totals.size() << " value\n";
+    else
+        cout << "\nYou entered a total of " << totals.size() << " values\n";
+
+
+    //Print the smallest and largest values
+    cout << "Your smallest value was " << totals[0] << "m\n";
+    cout << "Your largest value was " << totals[totals.size() - 1] << "m\n"; 
+
+
+    //Print the sum of all values
+    for(double x : totals)
+        total_sum = total_sum + x;
+        
+    cout << "The sum of all values is " << total_sum << "m\n";
+    cout << "Goodbye. Please come back and try again later.\n\n";
  
 	return 0;
 }
