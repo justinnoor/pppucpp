@@ -1,7 +1,7 @@
-//Chapter 4, Exercise 2, Page 128
+//Chapter 4, Exercise 1, Page 128
 //===============================
 
-/*Read a sequence of doubles into a vector. Each value will represent a distance between two cities along a route. Find the total distance of the route, the smallest and greatest distances along the route, and the mean distance of the route. Print the answers to the screen.*/
+/*Fix program 4.6.3 (p.120) so that it prints a median number. A median number is defined as one that is "exactly in the middle of a sequence of numbers". That means an element may need to be added if the vector has an even number of elements.*/
 
 
 #include "std_lib_facilities.h"
@@ -10,41 +10,27 @@ using namespace std;
 
 int main()
 {
-    vector<double> distances;
+    vector<double> temps;
 
-    double total_sum = 0;
+    cout << "Enter your numbers:\n";
 
-    cout << "Enter your current distance traveled:\n";
+    for(double temp; cin >> temp;)
+        temps.push_back(temp);
 
-    for(double distance; cin >> distance;)
-        distances.push_back(distance);
+    sort(temps);
 
-    sort(distances);
+    if(temps.size() % 2 == 0)
+        temps.push_back(temps[temps.size() -1] - 1);
+        /*The above line "should" add a new element that is 1 less than the largest              element. This will fulfill the definition of "median", and stay clear of the             largest element, or else it may get in the way on the next exercise :).*/
 
-    if(distances.size() % 2 == 0)
-        distances.push_back(distances[distances.size() - 1] - 1);
-        /*If the user creates a vector with an even number of elements, a new element            must be inserted to fulfill the definition of "median". The above line inserts an        element that is less than the largest one, by subtracting 1 from the largest             element. This new element "should" be second-to-last (it doesn't really matter).         Indeed there are other ways to accomplish this task, but it's getting late!*/
-
-    sort(distances);
-
-    cout << "The numbers you entered are:\n";
-    
-    for(double x : distances)
-        total_sum = total_sum + x;
+    sort(temps);
+    //Of course now the elements need to be re-sorted. You knew that.
 
     cout << "Your numbers are:\n";
-    for(double x: distances)
+    for(double x : temps)
         cout << x << '\n';
 
-    if(distances.size() % 3 == 0)
-        cout << "\nThe sum of all distances is: " << total_sum << '\n';
-    else
-        cout << "\nThe sum of all distances is: "
-             << total_sum - distances[distances.size() - 2] << '\n';
-
-    cout << "The smallest distance is: " << distances[0] << '\n';
-    cout << "The largest distance is: " << distances[distances.size() - 1] << '\n';
-    cout << "Your median number is: " << distances[distances.size() / 2] << '\n';
+    cout << "\nYour median number is: " << temps[temps.size() / 2] << '\n' << '\n';
 
 	return 0;
 }
