@@ -1,7 +1,7 @@
 //Chapter 4, Page 128, Exercise 8
 //===============================
 
-/*This program calculates grains of rice for the inventor of the game of chess. For every square of the chess board, totaling 64, the inventor asked for double the amount of grains for every square. In other words, 1 grain for the first square, 2 for the second, 4 for the third, etc. Thankfully, per the instructions, this program only needs calculate how many chess squares are required to provide 1,000 grains, 1,000,000 grains, and 1,000,000,000 grains to the inventor. It quickly becomes obvious that after the 6th iteration, which attempts to square something like 65500, the value is too large for the int object. The remaining iterations produce zeros. It can rightfully be assumed that this is the whole point of the assignment, so don't spend too much time on it. Nothing fancy :).*/
+/*This program calculates grains of rice for the inventor of the game of chess. For every square of the chess board, totaling 64, the inventor asked for double the amount of grains for every square. In other words, 1 grain for the first square, 2 for the second, 4 for the third, etc. Thankfully, per the instructions, this program only needs calculate how many chess squares are required to provide 1,000 grains, 1,000,000 grains, and 1,000,000,000 grains to the inventor. It quickly becomes obvious that after the 6th iteration, which attempts to square something like 65,500 grains, the value is too large for the int object. The iterations jump from approximately 65,500 to over 4 billion, and the remaining iterations produce zeros. It can rightfully be assumed that the whole point of this assignment is to observe this, so don't spend too much time on it. Nothing fancy :).*/
 
 
 #include "std_lib_facilities.h"
@@ -24,12 +24,11 @@ int main()
             break;
     }
     
-
 		cout << "At least " << chess_square << " squares are required "
 			 << "to produce 1,000 grains.\n"
-			 << "At least " << chess_square << " squares are also required "
+			 << "At least " << chess_square + 1 << " squares are required "
 			 << "to produce 1,000,000 grains.\n"
-		     << "Similarly, at least " << chess_square
+		     << "Similarly, at least " << chess_square + 1
              << " squares are required to produce 1,000,000,000 grains.\n";
 
 
