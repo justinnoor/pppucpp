@@ -25,11 +25,11 @@ int main()
     }
     
 
-		cout << "At least " << chess_square + 1 << " squares are required "
+		cout << "At least " << chess_square << " squares are required "
 			 << "to produce 1,000 grains.\n"
-			 << "At least " << chess_square + 1 << " squares are also required "
+			 << "At least " << chess_square << " squares are also required "
 			 << "to produce 1,000,000 grains.\n"
-		     << "Similarly, at least " << chess_square + 1
+		     << "Similarly, at least " << chess_square
              << " squares are required to produce 1,000,000,000 grains.\n";
 
 
