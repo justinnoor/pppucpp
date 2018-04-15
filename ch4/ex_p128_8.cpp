@@ -1,4 +1,7 @@
-/*This program provides grains of rice to the inventor of the game of chess. For every square on the chess board, which number 64, one grain of rice is provided, i.e., 1 for the first, 2 for the second, 3 for the third, and so on. After figuring out how many grains of rice a chess board generates, this program will calculate how many chess squares are required to provide the inventor with 'at least' 1,000 grains, 1,000,000 grains, and 1,000,000,000 grains of rice.*/
+//Chapter 4, Page 128, Exercise 8
+//===============================
+
+/*This program calculates grains of rice for the inventor of the game of chess. For every square of the chess board, totaling 64, the inventor asked for double the amount of grains, i.e., 1 for the first, 2 for the second, 4 for the third, squaring each amount of grains for every square. This program will only calculate how many chess squares are required to provide the inventor with 'at least' 1,000 grains, 1,000,000 grains, and 1,000,000,000 grains. It quickly becomes obvious that after the 6th iteration, which attempts to square something like 65000 * 65000, the number is too large for the int, and so the remaining iterations produce blank numbers of grains. It can rightfully be assumed that this is the whole point of the assignment, so don't spend too much time on it. Nothing fancy :).*/
 
 
 #include "std_lib_facilities.h"
@@ -8,62 +11,45 @@ using namespace std;
 int main()
 {
     int chess_square = 0;
-    int grains_per_square = 0;
-    int grains_per_board = 0;
+    int grains_per_square = 2;
 
 
-    //Number of grains produced by one chess board
-	for(int i = 1; i <= 64; ++i)
+    //Iterate over entire board, starting at square 2
+	for(int i = 2; i <= 64; ++i)
     {
 	    chess_square = i;
-        grains_per_square = i * i;
-        grains_per_board = grains_per_board + grains_per_square;
+        grains_per_square = grains_per_square * grains_per_square;
+        
+        if(grains_per_square > 1000)
+            break;
     }
+    
 
-    cout << "There are " << chess_square << " squares in one chess board\n";
-    cout << "One chess board produces " << grains_per_board 
-         << " grains of rice" << '\n';
+		cout << "At least " << chess_square + 1 << " squares are required "
+			 << "to produce 1,000 grains.\n"
+			 << "At least " << chess_square + 1 << " squares are also required "
+			 << "to produce 1,000,000 grains.\n"
+		     << "Similarly, at least " << chess_square + 1
+             << " squares are required to produce 1,000,000,000 grains.\n";
 
-    //Number of squares required for 1000 grains
-	for(int i = 1; i <= 64; ++i)
+
+//Use these to print everything out, to see what's going on.
+//========================================================================
+    //Print out square 1 separately
+    /*cout << "square 1\n"
+         << "grains_per_square = 1\n";
+
+    //Iterate over the chess board, starting at square 2
+    //==================================================
+	for(int i = 2; i <= 64; ++i)
     {
 	    chess_square = i;
-        grains_per_square = i * i;
-
-        if(grains_per_square == 1024)
-            cout << "1000 grains requires " << chess_square << " chess squares\n";
-    }
-
-    //Number of chess boards requried for 1000000, and 1000000000 grains
-    //First reset the variables
-    chess_square = 0;
-    grains_per_square = 0;
-    grains_per_board = 0;
-
-	for(int i = 1; i <= 64; ++i)
-    {
-	    chess_square = i;
-        grains_per_square = i * i;
-        grains_per_board = grains_per_board + grains_per_square;
-    }
-
-    cout << "1000000 grains require approximately "
-         << (1000000 / grains_per_board) + 1 << " chess boards\n";
-    cout << "1000000000 grains require approximately "
-         << (1000000000 / grains_per_board) + 1 << " chess boards\n";
-
-
-    //Use these to print out the iterations if needed, to see what's going on
-	/*for(int i = 1; i <= 64; ++i)
-    {
-	    chess_square = i;
-        grains_per_square = i * i;
-        grains_per_board = grains_per_board + grains_per_square;
+        grains_per_square = grains_per_square * grains_per_square;
 
         cout << "square " << chess_square << '\n';
         cout << "grains_per_square = " << grains_per_square << '\n';
     }*/
-
+//========================================================================
 
 	return 0;
 }
