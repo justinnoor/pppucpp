@@ -1,3 +1,6 @@
+//Chapter 4, Page 128, Exercise 11
+//================================
+
 /*This program extracts all of the prime numbers between 1 and 100. Extract the numbers from a loop, store them in a vector, and print them to the screen. Interestingly, the instructions for this exercise are a bit blurry. They seem to imply that the prime numbers should be tested against another pre-existing vector of prime numbers. However, the insructions clearly imply that this is optional, therefore, the student can solve the exercise according to their preferred method.*/
 
 
