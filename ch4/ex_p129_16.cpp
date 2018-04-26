@@ -16,12 +16,12 @@ int main()
 
     sort(pos_ints);
 
-    for(int i = 0; i < pos_ints.size() - 1; ++i)
+    for(int i = 0; i < pos_ints.size(); ++i)
     {
 		int temp_mode = pos_ints[i];
 		int temp_count = 0;
 
-        for(int j = 0; j < pos_ints.size() - 1; ++j)
+        for(int j = 0; j < pos_ints.size(); ++j)
             if(pos_ints[j] == temp_mode)
                 ++temp_count;
 		if(temp_count > count)
