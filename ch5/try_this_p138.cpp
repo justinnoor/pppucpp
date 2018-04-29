@@ -1,9 +1,16 @@
+//try_this_p138.cpp
+//=================
+/*Compile the examples below and see how the compiler responds*/
+//==============================================================
+
 #include "std_lib_facilities.h"
 
 using namespace std;
 
-/*Compile the declarations below and see how the compiler responds*/
-
+int area(int length, int width)
+{
+    return length * width;
+}
 
 int main()
 {
