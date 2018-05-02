@@ -23,8 +23,12 @@ int framed_area(int x, int y)
     return area(x - frame_width, y - frame_width);
 }
 
-int f(int x, int y, int z)
+int main()
 {
+    int x = 3;
+    int y = 4;
+    int z = 6;
+
     int area1 = area(x, y);
     if(area1 <= 0)
         error("non-positive area");
@@ -39,11 +43,7 @@ int f(int x, int y, int z)
     cout << "area2 = " << area2 << '\n';
     cout << "area3 = " << area3 << '\n';
     cout << "ratio = " << ratio << '\n';
-}
-
-int main()
-{
-    f(3, 4, 6);
 
     return 0;
 }
+
