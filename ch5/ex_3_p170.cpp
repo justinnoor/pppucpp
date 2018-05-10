@@ -1,4 +1,4 @@
-//ex_3_p169.cpp
+//ex_3_p170.cpp
 //=============
 /*The program on pg.169, even when corrected has errors. It will return values that surpass -273.15 degrees celcius, which is the lowest temperature that can be reached. Place a check in main() that will prevent users from entering temperatures below -273.15 celcius.*/
 //==================
