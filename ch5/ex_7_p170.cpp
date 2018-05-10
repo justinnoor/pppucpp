@@ -18,11 +18,14 @@ int main()
 
     //'a' cannot be zero
     if(a == 0)
-        error("a cannot be 0");
+        error("'a' cannot be 0");
 
-    //Find the two roots
-    x1 = (-b + sqrt((b * b) - 4 * a * c)) / (2 * a);    
-    x2 = (-b - sqrt((b * b) - 4 * a * c)) / (2 * a);
+    if(sqrt((b * b) - 4 * a * c) < 0)
+        error("discriminant is less than 0");
+
+    else if(sqrt((b * b) - 4 * a * c) >= 0)
+		x1 = (-b + sqrt((b * b) - 4 * a * c)) / (2 * a);    
+		x2 = (-b - sqrt((b * b) - 4 * a * c)) / (2 * a);
 
     cout << "The two roots are: " << x1 << " and " << x2 << '\n';
 
