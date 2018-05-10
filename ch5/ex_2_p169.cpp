@@ -1,4 +1,4 @@
-//ex_1_p169.cpp
+//ex_2_p169.cpp
 //=============
 /*The program on pg.169, ex.2, converts Celcius to Kelvin. It has many errors in it. Find the errors, list them, and correct the code.*/
 //===================================================
@@ -24,14 +24,14 @@ double ctok(double c)
 
 int main()
 {
+    //Technically there's no need to initialize this, but it's not wrong.
 	double c = 0; 
     
-    //Undeclared variable d
+    //Undeclared variable d. But that doesn't matter becaues d does nothing.
     //cin >> d;
 
     //Correct code:
-    double d;
-    cin >> d;
+    cin >> c;
 
     //Bad argument error in ctok()
     //double k = ctok("c");
