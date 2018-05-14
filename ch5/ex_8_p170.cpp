@@ -25,7 +25,7 @@ int main()
     }
 
     for(int i = 0; i < n; ++i) {
-        sum += values[i]
+        sum += values[i];
     }
 
     cout << "The sum of the first " << n << " numbers is: " << sum << '\n';
