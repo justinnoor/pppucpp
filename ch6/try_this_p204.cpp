@@ -2,8 +2,8 @@
 //=================
 // This is the example code for Chapter 6.6, "Try This" pg.204.
 // This is the first attempt at using the calculator. It will fail.
-// www.stroustrup.com/Programming/calculator00.cpp
-// ===============================================
+// See www.stroustrup.com/Programming/calculator00.cpp.
+// ====================================================
 
 
 #include "std_lib_facilities.h"
