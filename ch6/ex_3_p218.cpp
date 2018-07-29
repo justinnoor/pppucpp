@@ -1,8 +1,7 @@
-//ex_2_p218.cpp
-//================
-/*Add the ability to use '{}' in addition to '()' in the program -
-  so that {(4+5)*6}/(3+4) is a valid expression.*/
-//================================================
+//ex_3_p218.cpp
+//=============
+//Add a factorial so that 3! = 3*2*1 and so on.
+//=============================================
 
 #include "std_lib_facilities.h"
 
@@ -67,7 +66,19 @@ Token Token_stream::get()
 
 Token_stream ts;
 
+//=========================================================
+
 double expression(); //A forward declaration
+
+int factorial(int n)
+{
+    int fac = 1;
+    while(1 < n) {
+        fac *= n;
+        --n;
+    }
+    return fac;
+}
 
 double primary() 
 {
@@ -115,11 +126,10 @@ double term()
             }
             case '!':
             {
-                
+                left = factorial(left);
+                t = ts.get();
+                break;
             }
-
-
-
             default:
                 ts.putback(t);
                 return left;
