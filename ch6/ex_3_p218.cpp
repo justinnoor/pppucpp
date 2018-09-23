@@ -1,7 +1,5 @@
 //ex_3_p218.cpp
 //=============
-//Add a factorial so that 3! = 3*2*1 and so on.
-//=============================================
 
 #include "std_lib_facilities.h"
 
@@ -66,18 +64,18 @@ Token Token_stream::get()
 
 Token_stream ts;
 
-//=========================================================
+//---------------------------------------------------------
 
 double expression(); //A forward declaration
 
-int factorial(int n)
+int factorial(int n) //new factorial function
 {
-    int fac = 1;
-    while(1 < n) {
-        fac *= n;
+    int fact = 1;
+    while (1 < n) {
+        fact *= n;
         --n;
     }
-    return fac;
+    return fact;
 }
 
 double primary() 
@@ -107,26 +105,35 @@ double primary()
 
 double term()
 {
-    double left = primary();
+    double left = primary(); 
     Token t = ts.get();
 
     while(true) {
         switch(t.kind) {
-            case '*':
-                left *= primary();
+            case '!': //switch case for double left
+                left = factorial(left);
                 t = ts.get();
                 break;
+            case '*':
+            {
+                int x = primary(); //double d becomes int x
+                t = ts.get();
+                //run factorial() if int x is preceded by '!'
+                if(t.kind == '!') left *= factorial(x);
+                else
+                {
+                    ts.putback(t);
+                    left *= x;
+                }
+
+                t = ts.get();
+                break;
+            }
             case '/':
             {
                 double d = primary();
                 if(d == 0) error("divide by zero");
                 left /= d;
-                t = ts.get();
-                break;
-            }
-            case '!':
-            {
-                left = factorial(left);
                 t = ts.get();
                 break;
             }
